@@ -86,7 +86,7 @@ int main (int argc,char *argv[]) {
        
         // send file
         int bytes_num;
-        int split_size = 200;
+        int split_size = 1000;
         char buf[split_size];
         while(!feof(fp)) {
             bytes_num = fread(buf,sizeof(char),sizeof(buf),fp);
